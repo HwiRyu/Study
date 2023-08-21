@@ -7,9 +7,14 @@ FNN은 가장 기본적인 형태의 신경망 중 하나이다. 본 글에서�
 2. Layer들의 크기가 정해지면 이에 따라 Weight와 Bias의 크기와 초깃값을 결정한다. Weight는 $Weight^0$부터 $Weight^k$ 까지 있으며, $Weight^n$은 ($P^n$, $P^{n+1}$) 크기를 갖는 행렬로써 $Layer^n$에서 $Layer^{n+1}$로 값을 곱하여 전달한다. 식은 다음과 같다.
 
 
-$Layer^{n+1}_b = \sum_{a=1}^{P^n}Active Function(Layer^{n}_a) \cdot Weight^{n}_{ab} + Bias^{n}_b$
+$$Layer^{n+1}_b=$$
 
-$Total Loss = \sum_{b=1}^{P^{k+1}}Loss function(output function(L^{k+1}_b), Target value)$
+$$\sum_{a=1}^{P^{n}}ActiveFunction(Layer^n_a) \cdot Weight^n_{ab} + Bias^n_b$$
+
+
+$$Total Loss = \sum_{b=1}^{P^{k+1}}Loss function(output function(L^{k+1}_b), Target value)$$
+
+
 
 
 # Learning by gradient descent
