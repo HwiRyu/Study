@@ -5,7 +5,7 @@ Deep learning은 결국 input에 대해 어떤 function이 작용하여 우리�
 
 ![Alt text](image1-1.png)
 
-input-weight-loss를 그래프화 한것. 실제론 Loss Weight Input 셋 모두 더 많은 축을 갖는다.
+input-weight-loss를 그래프화 한것. 실제론 Loss Weight Input 셋 모두 더 많은 축을 갖는다.(Loss는 경우에 따라 한 축만 갖는다.)
 
 신경망은 흔하게 $f(x;\theta)$와 같이 표현된다. Fixed된 신경망의 구조 및 hyperparameter 이외에, 학습으로 $\theta$를 갱신시킬 수 있기 때문이다. $\ input(x)$을 원하는 output에 mapping시키기 위해선, $\theta$를 학습시켜 원하는 함수를 만들어내야 한다.
 
