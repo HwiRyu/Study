@@ -2,6 +2,10 @@
 
 FNN은 가장 기본적인 형태의 신경망 중 하나이다. 본 글에서는 FNN을 다음과 같이 구성한다.
 
+![Alt text](image1.png)
+![Alt text](image2.png)
+
+
 1. FNN을 [$P^0, P^1, \ldots, P^k, P^{k+1}$]로 초기화한다. 이때 $P^0$가 Input Data의 크기가 되며, $P^{k+1}$가 Output Data의 크기가 된다. $P^1$부터 $P^k$는 각 Layer들의 퍼셉트론 갯수가 된다. 즉 $Layer^n$은 $P^n$개의 퍼셉트론을 가지며, (1, $P^n$) 행렬이 된다.\\
 
 2. Layer들의 크기가 정해지면 이에 따라 Weight와 Bias의 크기와 초깃값을 결정한다. Weight는 $Weight^0$부터 $Weight^k$ 까지 있으며, $Weight^n$은 ($P^n$, $P^{n+1}$) 크기를 갖는 행렬로써 $Layer^n$에서 $Layer^{n+1}$로 값을 곱하여 전달한다. 식은 다음과 같다.
